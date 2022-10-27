@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Irish+Grover&family=Source+Serif+4:wght@600&display=swap');
+
+body::after {
+  content: '';
+  top: 0vh;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: .9;
+  position: absolute;
+  z-index: -1;
+}
+body{
+  height: 100vh;
+  overflow: hidden;
+}
+.mainbox {
+  background-color: transparent;
+  margin: auto;
+  height: 600px;
+  width: 600px;
+  position: relative;
+  font-family: "Inter";
+}
+
+.err {
+  color: #ffffff;
+  font-family: "Inter";
+  font-size: 11rem;
+  position:absolute;
+  left: 20%;
+  top: 8%;
+}
+
+.far {
+  position: absolute;
+  font-size: 8.5rem;
+  left: 42%;
+  top: 15%;
+  color: #ffffff;
+}
+
+.err2 {
+  color: #ffffff;
+  font-family: "Inter";
+  font-size: 11rem;
+  position:absolute;
+  left: 68%;
+  top: 8%;
+}
+
+.msg {
+  text-align: center;
+  font-family: "Inter";
+  font-size: 1.6rem;
+  position:absolute;
+  color: white;
+  left: 16%;
+  top: 45%;
+  width: 75%;
+}
+.msg h1{
+  color: red;
+}
+.button {
+  text-align: center;
+  font-size: 1.6rem;
+  position:absolute;
+  color: white;
+  left: 5%;
+  top: 80%;
+  width: 100%;
+}
+.cart:first-child{
+  background-color: transparent;
+  font-size: 15px;
+  font-family: "Inter";
+  background-color: white;
+  border: 2px solid white;
+}
+.cart button{
+  color: red;
+  border: none;
+  cursor: pointer;
+}
+.cart:last-child{
+  background-color: transparent;
+  border: 2px solid white;
+  font-family: "Inter";
+  /* color: black; */
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 600px){
+  .mainbox {
+    height: 60%;
+    width: 100%;
+  }
+  .err {
+    left: 8%;
+  }
+  .far {
+    left: 35%;
+  }
+  .err2 {
+    left: 68%;
+  }
+  .msg {
+      left: 13%;
+    }
+  .button {   
+    left: 2%;
+  }
+}
+
